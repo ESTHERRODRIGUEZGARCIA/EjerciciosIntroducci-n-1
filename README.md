@@ -24,9 +24,11 @@ Ejercicio 9: Media aritmética ponderada
 1. Escribir un algoritmo que calcula la media aritmética de tres números dados.
 2. La misma pregunta para una media ponderada cuando se dan los números y los coeficientes de ponderación.
 
-Algoritmo
+Algoritmo Media aritmética ponderada
 
-    definir num1, num2, num3, suma como REAL
+    definir num1, num2, num3, suma como entero
+    escribir ("Introduce los 3 números")
+    leer num1, num2, num3
     
                                                                                                                                                                 
 Fin Algoritmo
