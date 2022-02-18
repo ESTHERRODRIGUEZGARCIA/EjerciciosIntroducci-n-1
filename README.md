@@ -26,9 +26,10 @@ Ejercicio 9: Media aritmética ponderada
 
 Algoritmo Media aritmética ponderada
 
-    definir num1, num2, num3, suma como entero
+    definir num1, num2, num3 como entero
     escribir ("Introduce los 3 números")
     leer num1, num2, num3
-    
-                                                                                                                                                                
+    suma = (num1 + num2 + num3)/3
+    escribir ("El resultado es", suma) 
+                                                                                             
 Fin Algoritmo
