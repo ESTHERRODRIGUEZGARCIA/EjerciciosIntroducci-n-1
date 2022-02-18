@@ -26,4 +26,7 @@ Ejercicio 9: Media aritmética ponderada
 
 Algoritmo
 
+    definir num1, num2, num3, suma como REAL
+    
+                                                                                                                                                                
 Fin Algoritmo
