@@ -9,13 +9,27 @@ Algoritmo 1: Porcentajes, IVA e inversiones
     Entrada
     p: REAL # definir precio como REAL, precio no tiene impuestos
     i: REAL # % de IVA a aplicar
-    resultado: REAL #
-    precondicción 
-    precio > 0
-    escribir "Introduce un precio " # te devolverá el precio final, con impuestos incluidos
-    resultado = 
+    resultado: REAL # devuelve el precio final (con impuestos incluidos)
+
+    precondicción: 
+    p > 0
+    i > 0
+
+    realización: 
+    resultado = p + (p * i)
 
 Fin Algoritmo 1
+
+Algoritmo 2: Interés
+
+    Entrada:
+    p: REAL #importe inicial
+    m: REAL #tiempo expresado en meses
+    i: REAL #intereses
+    resultado: REAL #importe de los intereses generados
+
+
+Fin Algoritmo 2
 
 
 Ejercicio 9: Media aritmética ponderada
