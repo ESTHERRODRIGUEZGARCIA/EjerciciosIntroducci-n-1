@@ -43,26 +43,12 @@ Ejercicio 9: Media aritmética ponderada
 2. La misma pregunta para una media ponderada cuando se dan los números y los coeficientes de ponderación.
 
 Algoritmo Media 
-
-    definir num1, num2, num3 como entero
-    escribir ("Introduce los 3 números")
-    leer num1, num2, num3
-    suma = (num1 + num2 + num3)/3
-    escribir ("El resultado es", suma) 
+    
                                                                                              
 Fin Algoritmo
 
 ALgoritmo Media aritmética ponderada
-    definir num1, num2, num3 como entero
-    escribir ("Introduce los 3 números")
-    leer num1, num2, num3
-    media = (num1 + num2 + num3)/3
-    escribir ("El resultado es", media)
-    si la parte decimal de media > 0.6:
-        escribir ("EL resultado es ", parte entera de la media anterior + 1)
-    sino
-        escribir ("El resultado es:", parte entera de la media anterior)
-    fin si
+    
 Fin Algoritmo
 
 Ejercicio 10: Área del triángulo
