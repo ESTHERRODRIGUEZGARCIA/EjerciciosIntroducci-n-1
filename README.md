@@ -28,6 +28,12 @@ Algoritmo 2: Interés
     i: REAL #intereses
     resultado: REAL #importe de los intereses generados
 
+    precondición:
+    p >= 0
+    i > 0
+
+    realización: 
+    resultado = p * (i/12)*m
 
 Fin Algoritmo 2
 
