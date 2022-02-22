@@ -42,14 +42,18 @@ Ejercicio 9: Media aritmética ponderada
 1. Escribir un algoritmo que calcula la media aritmética de tres números dados.
 2. La misma pregunta para una media ponderada cuando se dan los números y los coeficientes de ponderación.
 
-Algoritmo Media 
-    
+Algoritmo 1: Media 
+    Entrada: #supongo que me dan los datos, 3 en este caso
+    num1: REAL
+    num2: REAL
+    num3: REAL
+    N: REAL
                                                                                              
-Fin Algoritmo
+Fin Algoritmo 1
 
-ALgoritmo Media aritmética ponderada
+ALgoritmo 2: Media aritmética ponderada
     
-Fin Algoritmo
+Fin Algoritmo 2
 
 Ejercicio 10: Área del triángulo
 1. Escribir un algoritmo que calcula el área de un triángulo del que se da la medida de un lado y la de la altura relativa a este lado.
