@@ -6,15 +6,16 @@ Ejercicio 8: Porcentajes, IVA e inversiones
 
 Algoritmo 1: Porcentajes, IVA e inversiones
     
-    definir precio como REAL
-    # precio1 no tiene impuestos
-    # precio2 % de IVA 
+    Entrada
+    p: REAL # definir precio como REAL, precio no tiene impuestos
+    i: REAL # % de IVA a aplicar
+    resultado: REAL #
     precondicción 
     precio > 0
-    escribir "Introduce un precio " # te devolverá el precio final
-    preciofinal = precioinicial - (impuestos/100 + )
+    escribir "Introduce un precio " # te devolverá el precio final, con impuestos incluidos
+    resultado = 
 
-Fin algoritmo
+Fin Algoritmo 1
 
 
 Ejercicio 9: Media aritmética ponderada
