@@ -120,6 +120,17 @@ Algoritmo 1: Salario
     salario_mes_bruto > 0
     horas_extra >= 0
 
+    variables:
+    horas_max: ENTERO
+    precio1: REAL #precio de las horas 36-43 (extras)
+    precio2: REAL #precio a partir de la hora 44 (extras)
+    horas_p1: ENTERO #num horas extra con precio1, 125%
+    horas_p2: ENTERO #num horas extra con precio2, 150%
+    ph_bruto: REAL #precio hora bruto
+
+    realización:
+    
+
 
 
 Fin ALgoritmo 1
