@@ -43,11 +43,17 @@ Ejercicio 9: Media aritmética ponderada
 2. La misma pregunta para una media ponderada cuando se dan los números y los coeficientes de ponderación.
 
 Algoritmo 1: Media 
+
     Entrada: #supongo que me dan los datos, 3 en este caso
     num1: REAL
     num2: REAL
     num3: REAL
     N: REAL
+    
+    realización:
+
+    S = num1 + num2 + num3
+    
                                                                                              
 Fin Algoritmo 1
 
