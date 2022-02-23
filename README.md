@@ -284,8 +284,11 @@ Algoritmo 6: Definición de es_deudora
 Fin Algoritmo 6
 
 Estructura Tipo cuenta:
+
     tipo CUENTA estructura
+    
     saldo : REAL
+    
     descubierto : REAL
 
     invariante
@@ -294,6 +297,7 @@ Estructura Tipo cuenta:
 
         # el saldo debe ser superior al descubierto autorizado
         saldo ≥ – descubierto
+        
     fin CUENTA
     
 Algoritmo 7: 
@@ -319,12 +323,17 @@ Algoritmo 7:
 Fin Algoritmo 7
 
 Estructura Tipo cuenta:
+
     tipo CUENTA estructura
+    
     # Cuenta con descubierto autorizado con una duración limitada.
 
     saldo : REAL
+    
     descubierto : REAL      # importe del descubierto autorizado 
+    
     fecha_descubierto : FECHA # decha de inicio del último descubierto
+    
     duración_max : FECHA      # Duración máxima del descubierto
 
     invariante
@@ -339,7 +348,9 @@ Estructura Tipo cuenta:
     fin CUENTA
 
 Algoritmo 8: Definición de abrir una cuenta con descubierto autorizado durante un tiempo limitado
+
     Algoritmo abrir
+    
     # Inicializar `c' mediante un `saldo_inicial' y un 
     # `descubierto_MAX' durante una `duración_max'.
 
