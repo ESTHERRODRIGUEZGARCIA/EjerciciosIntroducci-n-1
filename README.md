@@ -182,5 +182,15 @@ Algoritmo1: definición de abrir una cuenta
 Fin Algoritmo1
 
 Algoritmo2: abonar una cuenta
+    abonar(c : CUENTA ; crédito : REAL)
+    # Crédito `c' de la suma `crédito'.
+
+    Precondición
+    c.saldo ≠ NULO
+    crédito ≠ NULO
+
+
+
+fin abonar
 
 Fin Algoritmo2
