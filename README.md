@@ -188,6 +188,11 @@ Algoritmo2: abonar una cuenta
     Precondición
     c.saldo ≠ NULO
     crédito ≠ NULO
+    
+    realización
+    c.saldo ← c.saldo + crédito
+
+
 
 
 
