@@ -92,12 +92,19 @@ Algoritmo 1: Área del triángulo
 Fin Algoritmo 1
 
 Algoritmo 2: Área del triángulo rectángulo
+
+    #observación: se puede usar el algoritmo nº1
+
     entrada: #lados dados
     L1: REAL
     L2: REAL
 
     precondición:
     ángulo entre L1 y L2 (90 º)
+    
+    realización:
+    resultado = (L1*L2)/2 : REAL
+
 Fin Algoritmo 2
 
 Ejercicio 11: Salario y horas extra
