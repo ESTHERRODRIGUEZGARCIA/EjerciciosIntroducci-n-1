@@ -59,6 +59,7 @@ Algoritmo 1: Media
 Fin Algoritmo 1
 
 ALgoritmo 2: Media aritmética ponderada
+    entrada:
     num1: REAL
     num2: REAL
     num3: REAL
@@ -69,12 +70,35 @@ ALgoritmo 2: Media aritmética ponderada
     
     realización:
     resultado = num1*p1 + num2*p2 + num3*p3 : REAL
-    
+
 Fin Algoritmo 2
 
 Ejercicio 10: Área del triángulo
 1. Escribir un algoritmo que calcula el área de un triángulo del que se da la medida de un lado y la de la altura relativa a este lado.
 2. ¿Se puede utilizar este algoritmo para un triángulo rectángulo si se dan las medidas de sus dos lados perpendiculares?
+
+Algoritmo 1: Área del triángulo
+    Entrada: 
+    L: REAL #lado
+    H: REAL #altura
+
+    precondición:
+    L > 0
+    H > 0
+
+    realización:
+    resultado = (L*H)/2 : REAL
+
+Fin Algoritmo 1
+
+Algoritmo 2: Área del triángulo rectángulo
+    entrada: #lados dados
+    L1: REAL
+    L2: REAL
+
+    precondición:
+    ángulo entre L1 y L2 (90 º)
+Fin Algoritmo 2
 
 Ejercicio 11: Salario y horas extra
 
