@@ -158,3 +158,23 @@ Se considera las cuentas de depósitos alojadas en un banco por los clientes. So
 2. Definir las operaciones aplicables.
 En determinadas circunstancias y para determinados clientes, la banca autoriza un descubierto limitado y temporal.
 3. Volver a hacer las definiciones previas para permitir estos descubiertos.
+
+Algoritmo1: Cuenta de depósito
+
+    abrir(c : CUENTA ; saldo_inicial : REAL)
+    # Inicializar `c' mediante un `saldo_inicial'.
+
+    Precondición
+    saldo_inicial > 0
+
+    realización
+    c.descubierto ← 0
+    c.saldo ← saldo_inicial
+
+    postcondición
+    c.descubierto = 0
+        # El descubierto no está autorizado
+    antiguo(saldo_inicial) = saldo_inicial
+    c.saldo = saldo_inicial
+
+fin abrir
