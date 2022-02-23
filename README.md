@@ -188,14 +188,19 @@ Algoritmo2: abonar una cuenta
     Precondición
     c.saldo ≠ NULO
     crédito ≠ NULO
-    
+
     realización
     c.saldo ← c.saldo + crédito
 
+    postcondición
+    # El descubierto autorizado y el importe del `crédito' no se
+    # modifican
+    antiguo(c).descubierto = descubierto
+    antiguo(c).crédito = crédito
 
-
-
-
-fin abonar
+    # El saldo aumenta con el `crédito'
+    c.saldo = antiguo(c).saldo + crédito
+    
+    fin abonar
 
 Fin Algoritmo2
