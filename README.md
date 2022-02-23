@@ -204,3 +204,7 @@ Algoritmo2: abonar una cuenta
     fin abonar
 
 Fin Algoritmo2
+
+Algoritmo 3: cargar la cuenta
+
+Fin Algoritmo 3
