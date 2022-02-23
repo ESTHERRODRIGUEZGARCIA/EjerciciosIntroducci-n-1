@@ -1,4 +1,7 @@
 # Ejercicios Introducción a la Algorítmica
+En este repositorio se encuentran los ejercicios 8, 9, 10, 11 y 12 de "Introducción  a la Algorítmica.
+
+Trabajo realiado por Esther Rodríguez García
 
 # Ejercicio 8: Porcentajes, IVA e inversiones
 1. Escribir un algoritmo que calcula el precio con todos los impuestos incluidos (TII) para un precio sin impuestos y un porcentaje de IVA dado.
