@@ -110,6 +110,17 @@ Fin Algoritmo 2
 Ejercicio 11: Salario y horas extra
 
 Algoritmo 1: Salario
+    #salario bruto: horas normales y horas extra (remuneradas) al mes
+
+    entrada:
+    salario_mes_bruto: REAL
+    horas_extra: ENTERO #horas extra al mes a remunerar
+
+    precondición:
+    salario_mes_bruto > 0
+    horas_extra >= 0
+
+
 
 Fin ALgoritmo 1
 
