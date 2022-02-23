@@ -48,17 +48,20 @@ Algoritmo 1: Media
     num1: REAL
     num2: REAL
     num3: REAL
-    
+    M = REAL #media
     
     realización:
-
     S = num1 + num2 + num3
+    M = S/3
 
+    resultado = M
                                                                                              
 Fin Algoritmo 1
 
 ALgoritmo 2: Media aritmética ponderada
-    
+    num1: REAL
+    num2: REAL
+    num3: REAL
 Fin Algoritmo 2
 
 Ejercicio 10: Área del triángulo
