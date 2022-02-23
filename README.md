@@ -48,12 +48,12 @@ Algoritmo 1: Media
     num1: REAL
     num2: REAL
     num3: REAL
-    N: REAL
+    
     
     realización:
 
     S = num1 + num2 + num3
-    
+
                                                                                              
 Fin Algoritmo 1
 
