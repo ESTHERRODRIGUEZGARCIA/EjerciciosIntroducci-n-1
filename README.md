@@ -207,4 +207,166 @@ Fin Algoritmo2
 
 Algoritmo 3: cargar la cuenta
 
+    cargar(c : CUENTA ; débito : REAL)
+    # Carga `c' con la suma `débito'.
+
+    Precondición
+    c.saldo ≠ NULO
+    débito ≠ NULO
+    c.saldo + c.descubierto ≥ débito ≥ 0
+
+     realización
+    abonar(c, –débito)
+
+    postcondición
+    # El descubierto autorizado y el importe del `débito' no se
+    # modifican
+    antiguo(c).descubierto = descubierto
+    antiguo(débito) = débito
+
+    # Al saldo se le resta el `débito'
+    c.saldo = antiguo(c).saldo – débito
+
+fin cargar
 Fin Algoritmo 3
+
+Algoritmo 4: función consultar una cuenta:
+    consultar(c : CUENTA) : REAL
+    # El `saldo' de la cuenta `c'.
+
+    precondición
+    c.saldo ≠ NULO
+
+    realización
+    Resultado ← c.saldo
+
+    postcondición
+    Resultado = c.saldo
+
+    fin consultar
+
+Fin Algoritmo 4
+
+Algoritmo 5: Definición de es_acreedora
+
+    es_acreedora(c : CUENTA) : BOOLEANO
+    # ¿`c' es acreedora?
+
+    precondición
+    c.saldo ≠ NULO
+
+    Realización
+    Resultado ← (c.saldo > 0)
+
+    postcondición
+    Resultado = (c.saldo > 0)
+
+    fin es_acreedora
+
+Fin Algoritmo 5
+
+Algoritmo 6: Definición de es_deudora
+
+    es_deudora (c : CUENTA) : BOOLEANO
+    # ¿`c' es deudora?
+
+    precondición
+    c.saldo ≠ NULO
+
+    Realización
+    Resultado ← (– c.descubierto ≤ c.saldo ≤ 0)
+
+    postcondición
+    Resultado = (– c.descubierto ≤ c.saldo ≤ 0)
+
+    fin es_deudora
+    
+Fin Algoritmo 6
+
+Estructura Tipo cuenta:
+    tipo CUENTA estructura
+    saldo : REAL
+    descubierto : REAL
+
+    invariante
+        # El descubierto está autorizado
+        descubierto ≥ 0
+
+        # el saldo debe ser superior al descubierto autorizado
+        saldo ≥ – descubierto
+    fin CUENTA
+    
+Algoritmo 7: 
+
+    abrir(c : CUENTA ; saldo_inicial : REAL ; descubierto_MAX : REAL)
+    # Inicializar `c' mediante un `saldo_inicial' y un 
+    # `descubierto_MAX'.
+
+    Precondición
+    saldo_inicial > 0
+    descubierto_MAX ≥ 0
+
+    realización
+    c.descubierto ← descubierto_MAX
+    c.saldo ← saldo_inicial
+
+    postcondición
+    c.descubierto = descubierto_MAX
+    c.saldo = saldo_inicial
+
+    fin abrir
+    
+Fin Algoritmo 7
+
+Estructura Tipo cuenta:
+    tipo CUENTA estructura
+    # Cuenta con descubierto autorizado con una duración limitada.
+
+    saldo : REAL
+    descubierto : REAL      # importe del descubierto autorizado 
+    fecha_descubierto : FECHA # decha de inicio del último descubierto
+    duración_max : FECHA      # Duración máxima del descubierto
+
+    invariante
+        # El descubierto está autorizado durante un tiempo limitado
+        descubierto ≥ 0
+        fecha_descubierto ≠ 0 => 
+                       fecha_descubierto + duración_max ≤ 
+    fecha_actual
+
+        # el saldo debe ser superior al descubierto autorizado 
+        saldo ≥ descubierto
+    fin CUENTA
+
+Algoritmo 8: Definición de abrir una cuenta con descubierto autorizado durante un tiempo limitado
+    Algoritmo abrir
+    # Inicializar `c' mediante un `saldo_inicial' y un 
+    # `descubierto_MAX' durante una `duración_max'.
+
+    Entrada
+    c : CUENTA
+    saldo_inicial : REAL
+    descubierto_MAX : REAL
+    duración_max : FECHA
+
+    Precondición
+    saldo_inicial > 0
+    descubierto_MAX ≥ 0
+    duración_max ≥ 0
+
+    realización
+    c.descubierto ← descubierto_MAX
+    c.saldo ← saldo_inicial
+    c.fecha_descubierto ← 0
+    c.duración_max ← duración_max
+
+    postcondición
+    c.descubierto = descubierto_MAX
+    c.saldo = saldo_inicial
+    c.duración_max = duración_max
+    c.fecha_descubierto = 0
+
+    fin abrir
+
+Fin Algoritmo 8
+
