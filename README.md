@@ -62,6 +62,14 @@ ALgoritmo 2: Media aritmética ponderada
     num1: REAL
     num2: REAL
     num3: REAL
+    #porcentajes de las ponderaciones
+    p1: REAL
+    p2: REAL
+    p3: REAL
+    
+    realización:
+    resultado = num1*p1 + num2*p2 + num3*p3 : REAL
+    
 Fin Algoritmo 2
 
 Ejercicio 10: Área del triángulo
