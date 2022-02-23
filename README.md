@@ -132,10 +132,11 @@ Algoritmo 1: Salario
     semanas: ENTERO #52 en un año
     horas_semana: ENTERO #35
     horas_max: ENTERO #8
+
     realización:
-    horas_p1 = horas_extra
-
-
+    horas_p1 = inf(horas_extra, horas_max)
+    horas_p2 = sup(horas_extra-horas_max,0)
+    resultado = ph_bruto * (horas_p1 * precio1 + horas_p2 * precio2)
 
 Fin ALgoritmo 1
 
