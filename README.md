@@ -159,7 +159,7 @@ Se considera las cuentas de depósitos alojadas en un banco por los clientes. So
 En determinadas circunstancias y para determinados clientes, la banca autoriza un descubierto limitado y temporal.
 3. Volver a hacer las definiciones previas para permitir estos descubiertos.
 
-Algoritmo1: Cuenta de depósito
+Algoritmo1: definición de abrir una cuenta
 
     abrir(c : CUENTA ; saldo_inicial : REAL)
     # Inicializar `c' mediante un `saldo_inicial'.
@@ -177,4 +177,10 @@ Algoritmo1: Cuenta de depósito
     antiguo(saldo_inicial) = saldo_inicial
     c.saldo = saldo_inicial
 
-fin abrir
+    fin abrir
+
+Fin Algoritmo1
+
+Algoritmo2: abonar una cuenta
+
+Fin Algoritmo2
