@@ -59,10 +59,12 @@ Ejercicio 9: Media aritmética ponderada
     Fin Algoritmo 1
 
     ALgoritmo 2: Media aritmética ponderada
+
         entrada:
         num1: REAL
         num2: REAL
         num3: REAL
+    
         #porcentajes de las ponderaciones
         p1: REAL
         p2: REAL
