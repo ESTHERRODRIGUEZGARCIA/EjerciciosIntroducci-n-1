@@ -109,6 +109,10 @@ Fin Algoritmo 2
 
 Ejercicio 11: Salario y horas extra
 
+Algoritmo 1: Salario
+
+Fin ALgoritmo 1
+
 El cálculo de una nómina tiene en cuenta el salario bruto asociado a las horas «normales» que debe hacer el empleado y las horas «extra» trabajadas en el mes. Las horas extra se remuneran según las siguientes normas administrativas:
 Tarifa por hora aumentada en un 125 % para las horas entre la 36.ª y la 43.ª.
 Tarifa por hora aumentada en un 150 % para las horas a partir de la 44.ª.
