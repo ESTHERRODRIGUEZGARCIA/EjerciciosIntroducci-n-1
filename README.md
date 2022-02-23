@@ -128,8 +128,12 @@ Algoritmo 1: Salario
     horas_p2: ENTERO #num horas extra con precio2, 150%
     ph_bruto: REAL #precio hora bruto
 
+    constantes:
+    semanas: ENTERO #52 en un año
+    horas_semana: ENTERO #35
+    horas_max: ENTERO #8
     realización:
-    
+    horas_p1 = horas_extra
 
 
 
